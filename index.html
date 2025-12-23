@@ -1,136 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Balaghat Minerals | Manganese Ore & Oxide Manufacturer</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f5f5f5;
-      color: #333;
-    }
-    header {
-      background: #1f2933;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
-      background: white;
-      margin-bottom: 20px;
-    }
-    h2 {
-      color: #1f2933;
-      margin-bottom: 15px;
-    }
-    .products li {
-      margin-bottom: 8px;
-    }
-    .highlight {
-      background: #e2e8f0;
-      padding: 15px;
-      border-left: 5px solid #1f2933;
-    }
-    footer {
-      background: #1f2933;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background: #1f2933;
-      color: white;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balaghat Minerals | Manganese Manufacturer & Bulk Exporter</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --charcoal: #1a252f;
+            --ind-blue: #2980B9;
+            --whatsapp-green: #25D366;
+            --light-bg: #f4f7f6;
+        }
+
+        body { font-family: 'Open Sans', sans-serif; color: #333; overflow-x: hidden; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Inter', sans-serif; text-transform: uppercase; letter-spacing: 1px; color: var(--charcoal); }
+
+        /* Navbar */
+        .navbar { background: white; border-bottom: 4px solid var(--ind-blue); padding: 15px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .navbar-brand { font-weight: 800; font-size: 1.6rem; color: var(--charcoal) !important; }
+        .nav-link { font-weight: 700; color: var(--charcoal) !important; margin-left: 20px; transition: 0.3s; }
+        .nav-link:hover { color: var(--ind-blue) !important; }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+                        url('https://images.unsplash.com/photo-1578319439584-104c94d37305?q=80&w=1920&auto=format&fit=crop');
+            background-size: cover; background-position: center; background-attachment: fixed;
+            height: 90vh; display: flex; align-items: center; color: white; text-align: center;
+        }
+
+        /* Buttons */
+        .btn-main { background: var(--ind-blue); color: white; padding: 16px 45px; font-weight: 800; border-radius: 5px; border: none; transition: 0.4s; text-decoration: none; display: inline-block; }
+        .btn-main:hover { background: #1f6391; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); color: white; }
+
+        /* Floating WhatsApp */
+        .whatsapp-float {
+            position: fixed; bottom: 30px; right: 30px; background: var(--whatsapp-green); color: white;
+            width: 60px; height: 60px; border-radius: 50%; text-align: center; font-size: 30px;
+            box-shadow: 2px 5px 15px rgba(0,0,0,0.3); z-index: 1000; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: 0.3s;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); color: white; }
+
+        /* Product Cards */
+        .section-padding { padding: 90px 0; }
+        .product-card { border: none; background: white; transition: 0.4s; height: 100%; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .product-card:hover { transform: translateY(-10px); box-shadow: 0 15px 35px rgba(0,0,0,0.1); border-bottom: 5px solid var(--ind-blue); }
+        .product-img { height: 240px; object-fit: cover; width: 100%; }
+
+        /* Infrastructure Icons */
+        .infra-box { background: var(--light-bg); border-radius: 8px; padding: 25px; margin-bottom: 20px; transition: 0.3s; border-left: 6px solid var(--ind-blue); }
+        .infra-box:hover { background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+
+        /* AI Chatbot Window */
+        #ai-chat-window {
+            display: none; position: fixed; bottom: 100px; right: 30px; width: 330px; height: 480px; 
+            background: white; border-radius: 15px; box-shadow: 0 15px 40px rgba(0,0,0,0.3); 
+            z-index: 2000; flex-direction: column; overflow: hidden; border: 1px solid #ddd;
+        }
+
+        .chat-header { background: var(--charcoal); color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center; }
+        #chat-body { flex: 1; padding: 15px; overflow-y: auto; background: #f8f9fa; font-size: 14px; }
+        .chat-input-area { padding: 12px; background: white; border-top: 1px solid #eee; display: flex; }
+    </style>
 </head>
 <body>
 
-<header>
-  <h1>Balaghat Minerals</h1>
-  <p>Manufacturer & Supplier of Manganese Ore and Manganese Oxide</p>
-</header>
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-<section>
-  <h2>About Us</h2>
-  <p>
-    Balaghat Minerals is engaged in mining, processing, and manufacturing of
-    manganese-based products in Madhya Pradesh, India. With in-house processing
-    facilities and experienced technical team, we supply consistent quality
-    material to domestic and international buyers.
-  </p>
-</section>
+    <div onclick="toggleChat()" style="position: fixed; bottom: 105px; right: 30px; background: #34495e; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 1001; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+        <i class="fas fa-robot" style="font-size: 24px;"></i>
+    </div>
 
-<section>
-  <h2>Our Products</h2>
-  <ul class="products">
-    <li>Manganese Ore (Lumps & Fines)</li>
-    <li>Manganese Oxide Powder – 38% & 40%</li>
-    <li>Manganese Oxide Powder – 48%</li>
-    <li>Manganese Dioxide (MnO₂) – Granular</li>
-    <li>Low Carbon Ferro Manganese (On Request)</li>
-  </ul>
-</section>
+    <div id="ai-chat-window">
+        <div class="chat-header">
+            <span><i class="fas fa-robot me-2"></i> BM AI Support</span>
+            <i class="fas fa-times" onclick="toggleChat()" style="cursor: pointer;"></i>
+        </div>
+        <div id="chat-body">
+            <div class="mb-2"><span style="background:#ddd; padding:8px 12px; border-radius:12px; display:inline-block;">Namaste! Balaghat Minerals AI mein aapka swagat hai. Main aapki kya madad kar sakta hoon?</span></div>
+        </div>
+        <div class="chat-input-area">
+            <input id="user-msg" type="text" class="form-control me-2" placeholder="Ask about price, quality...">
+            <button onclick="aiResponse()" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
 
-<section>
-  <h2>Why Choose Us</h2>
-  <div class="highlight">
-    ✔ Direct manufacturer<br>
-    ✔ Consistent bulk supply<br>
-    ✔ In-house grinding & processing<br>
-    ✔ Competitive pricing<br>
-    ✔ Quick dispatch
-  </div>
-</section>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">BALAGHAT MINERALS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#infrastructure">Facility</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<section>
-  <h2>Infrastructure</h2>
-  <p>
-    Our facility includes pulverizers, cyclone separators, dust collection systems,
-    furnaces, and bagging units allowing us to meet bulk industrial requirements.
-  </p>
-</section>
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-2 fw-bold mb-3">BALAGHAT MINERALS</h1>
+            <p class="fs-4 mb-5 text-light text-uppercase">Direct Manufacturer & Bulk Supplier of Manganese Products</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#contact" class="btn-main">GET FREE QUOTE</a>
+                <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-outline-light px-5 py-3 fw-bold">WHATSAPP US</a>
+            </div>
+        </div>
+    </header>
 
-<section>
-  <h2>Contact Us</h2>
-  <p>
-    📍 Location: Balaghat, Madhya Pradesh, India<br>
-    📞 Phone / WhatsApp: +91-XXXXXXXXXX<br>
-    📧 Email: sales@balaghatminerals.com
-  </p>
-  <a class="btn" href="mailto:sales@balaghatminerals.com">Send Enquiry</a>
-</section>
-
-<footer>
-  © 2025 Balaghat Minerals. All Rights Reserved.
-</footer>
-
-</body>
-</html>                    <div class="lg:w-1/2">
-                        <h2 class="text-3xl font-extrabold text-blue-950 mb-6 uppercase leading-tight italic">Quality Guaranteed by <br>Global Leaders</h2>
-                        <p class="text-slate-600 mb-8 italic">To ensure absolute transparency for international buyers, we provide third-party inspection reports from world-renowned agencies.</p>
-                        <ul class="space-y-4 font-semibold text-blue-900">
-                            <li><i class="fas fa-check-double mr-3 text-blue-600"></i> Pre-Shipment Inspection (PSI)</li>
-                            <li><i class="fas fa-check-double mr-3 text-blue-600"></i> SGS / Intertek Laboratory Reports</li>
-                            <li><i class="fas fa-check-double mr-3 text-blue-600"></i> Certificate of Quality & Quantity</li>
-                        </ul>
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1574689049868-e94ed5301745?q=80&w=800&auto=format&fit=crop" alt="Manganese Processing" class="img-fluid rounded-3 shadow-lg">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="mb-4">Real Manufacturers from Balaghat, MP</h2>
+                    <p class="lead text-primary fw-bold">Traders se bachein, direct factory se judein.</p>
+                    <p>Hamari manufacturing unit Balaghat (Madhya Pradesh) mein hai jo Manganese ka hub hai. Hum high-grade Manganese Ore ko process karke Oxide aur Dioxide banate hain jo Steel, Fertilizers aur Chemicals mein use hota hai.</p>
+                    <div class="row g-3">
+                        <div class="col-6"><i class="fas fa-certificate text-primary me-2"></i> Quality Guaranteed</div>
+                        <div class="col-6"><i class="fas fa-globe text-primary me-2"></i> Global Exports</div>
+                        <div class="col-6"><i class="fas fa-truck text-primary me-2"></i> Fast Dispatch</div>
+                        <div class="col-6"><i class="fas fa-warehouse text-primary me-2"></i> Ready Stock</div>
                     </div>
-                    <div class="lg:w-1/2 grid grid-cols-2 gap-6">
-                        <div class="bg-white p-8 rounded-2xl text-center shadow-sm">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/SGS_Logo.svg/1200px-SGS_Logo.svg.png" class="h-10 mx-auto mb-4 grayscale opacity-70">
-                            <p class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Inspected by SGS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="section-padding bg-light">
+        <div class="container text-center">
+            <h2 class="mb-5">Our Core Products</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="product-card text-start">
+                        <img src="https://images.unsplash.com/photo-1512411470471-19800778c199?q=80&w=400&auto=format&fit=crop" class="product-img" alt="Manganese Ore">
+                        <div class="p-4">
+                            <h4 class="h5 fw-bold">Manganese Ore</h4>
+                            <p class="small">Lumps and Fines for Ferro-Alloy plants and Steel production.</p>
                         </div>
-                        <div class="bg-white p-8 rounded-2xl text-center shadow-sm">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Intertek_logo.svg/2560px-Intertek_logo.svg.png" class="h-10 mx-auto mb-4 grayscale opacity-70">
-                            <p class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Verified by Intertek</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card text-start">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=400&auto=format&fit=crop" class="product-img" alt="Mn Oxide">
+                        <div class="p-4">
+                            <h4 class="h5 fw-bold">Mn Oxide (38%-48%)</h4>
+                            <p class="small">Used in Cattle feed, Fertilizers, and Welding electrodes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card text-start">
+                        <img src="https://images.unsplash.com/photo-1532187875302-1df92fa1f417?q=80&w=400&auto=format&fit=crop" class="product-img" alt="MnO2">
+                        <div class="p-4">
+                            <h4 class="h5 fw-bold">Manganese Dioxide (MnO₂)</h4>
+                            <p class="small">High purity granular material for specialized chemical use.</p>
                         </div>
                     </div>
                 </div>
@@ -138,74 +176,50 @@
         </div>
     </section>
 
-    <section id="export" class="py-24 bg-blue-950 text-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold uppercase tracking-widest">Global Export Operations</h2>
-                <p class="text-blue-300 mt-4">Full-scale logistics for high-volume trade</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="text-center p-8 stat-card rounded-2xl">
-                    <i class="fas fa-anchor text-4xl mb-6 text-blue-400"></i>
-                    <h4 class="text-xl font-bold mb-4">Strategic Locations</h4>
-                    <p class="text-blue-100/70 text-sm italic">Direct supply to Vizag & Gangavaram Port for rapid international shipping.</p>
+    <section id="infrastructure" class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5">Factory & Infrastructure</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="infra-box"><i class="fas fa-industry text-primary me-3"></i> High-Speed Pulverizers</div>
+                    <div class="infra-box"><i class="fas fa-microchip text-primary me-3"></i> Advanced Cyclone Separators</div>
+                    <div class="infra-box"><i class="fas fa-vial text-primary me-3"></i> Quality Testing Lab</div>
                 </div>
-                <div class="text-center p-8 stat-card rounded-2xl">
-                    <i class="fas fa-shield-alt text-4xl mb-6 text-blue-400"></i>
-                    <h4 class="text-xl font-bold mb-4">Trade Security</h4>
-                    <p class="text-blue-100/70 text-sm italic">Provision of 2% Performance Bank Guarantee (PBG) for large-scale monthly contracts.</p>
-                </div>
-                <div class="text-center p-8 stat-card rounded-2xl">
-                    <i class="fas fa-file-contract text-4xl mb-6 text-blue-400"></i>
-                    <h4 class="text-xl font-bold mb-4">Contract Terms</h4>
-                    <p class="text-blue-100/70 text-sm italic">Flexible terms including CIF, FOB, and CNF based on buyer requirements.</p>
+                <div class="col-md-6">
+                    <div class="infra-box"><i class="fas fa-fire text-primary me-3"></i> Controlled Temperature Furnaces</div>
+                    <div class="infra-box"><i class="fas fa-box-open text-primary me-3"></i> Bulk Bagging (up to 1000KG)</div>
+                    <div class="infra-box"><i class="fas fa-shield-alt text-primary me-3"></i> Dust Collection Systems</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-24">
-        <div class="container mx-auto px-6 max-w-6xl">
-            <div class="bg-white shadow-2xl rounded-[2.5rem] overflow-hidden border">
-                <div class="flex flex-col lg:flex-row">
-                    <div class="lg:w-1/3 bg-blue-900 p-12 text-white">
-                        <h3 class="text-3xl font-bold mb-8 uppercase italic">Get in Touch</h3>
-                        <p class="text-blue-300 mb-8">Ready to supply up to 150,000 MT/month based on contract capacity.</p>
-                        <div class="space-y-6">
-                            <div class="flex items-center">
-                                <i class="fas fa-map-marker-alt mr-4 text-blue-400"></i>
-                                <span class="text-sm">Balaghat, Madhya Pradesh, India</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fab fa-whatsapp mr-4 text-green-400"></i>
-                                <span class="text-sm">+91-9873733324</span>
-                            </div>
-                        </div>
+    <section id="contact" class="section-padding bg-charcoal text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h2 class="text-white mb-4">Contact Our Team</h2>
+                    <p class="mb-5 text-secondary">Export enquiries for Bangladesh, Vietnam & Indonesia are welcome.</p>
+                    <p><i class="fas fa-map-marker-alt me-2 text-primary"></i> Balaghat, Madhya Pradesh, India</p>
+                    <p><i class="fas fa-envelope me-2 text-primary"></i> sales@balaghatminerals.com</p>
+                    <div class="mt-4">
+                        <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="btn" style="background: #25D366; color:white; font-weight:700; padding:15px 30px;">
+                            <i class="fab fa-whatsapp me-2"></i> CHAT ON WHATSAPP
+                        </a>
                     </div>
-                    <div class="lg:w-2/3 p-12">
-                        <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div class="space-y-2">
-                                <label class="text-xs font-bold uppercase text-slate-400">Full Name</label>
-                                <input type="text" class="w-full p-4 bg-slate-50 border rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
+                </div>
+                <div class="col-lg-7 mt-5 mt-lg-0">
+                    <div class="bg-white p-4 rounded-3 text-dark shadow-lg">
+                        <h4 class="mb-4">Bulk Enquiry Form</h4>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6"><input type="text" class="form-control" placeholder="Your Name" required></div>
+                                <div class="col-md-6"><input type="text" class="form-control" placeholder="Company Name" required></div>
+                                <div class="col-12"><input type="email" class="form-control" placeholder="Email Address"></div>
+                                <div class="col-12"><select class="form-select"><option>Manganese Ore</option><option>Manganese Oxide</option><option>MnO2</option></select></div>
+                                <div class="col-12"><textarea class="form-control" rows="4" placeholder="Tell us your monthly requirement in MT..."></textarea></div>
+                                <div class="col-12"><button class="btn-main w-100">SUBMIT REQUEST</button></div>
                             </div>
-                            <div class="space-y-2">
-                                <label class="text-xs font-bold uppercase text-slate-400">Corporate Email</label>
-                                <input type="email" class="w-full p-4 bg-slate-50 border rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
-                            </div>
-                            <div class="space-y-2 md:col-span-2">
-                                <label class="text-xs font-bold uppercase text-slate-400">Inquiry Type</label>
-                                <select class="w-full p-4 bg-slate-50 border rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
-                                    <option>Request CIF Quote (Export)</option>
-                                    <option>Request FOB Quote (Export)</option>
-                                    <option>Domestic Bulk Inquiry</option>
-                                    <option>Request SGS Sample Report</option>
-                                </select>
-                            </div>
-                            <div class="space-y-2 md:col-span-2">
-                                <label class="text-xs font-bold uppercase text-slate-400">Message (Quantity & Destination Port)</label>
-                                <textarea class="w-full p-4 bg-slate-50 border rounded-xl h-32 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Enter your requirements..."></textarea>
-                            </div>
-                            <button class="md:col-span-2 bg-blue-600 text-white font-extrabold py-5 rounded-xl uppercase tracking-widest hover:bg-black transition shadow-xl">Send Global Inquiry</button>
                         </form>
                     </div>
                 </div>
@@ -213,12 +227,43 @@
         </div>
     </section>
 
-    <footer class="py-12 bg-slate-50 border-t">
-        <div class="container mx-auto px-6 text-center">
-            <p class="text-slate-400 text-xs font-bold uppercase tracking-widest italic mb-2">© 2025 Balaghat Minerals | Export Excellence Unit</p>
-            <p class="text-slate-300 text-[10px]">Partner: Nigar Parveen | GST 23AAUFB1933D1ZP</p>
-        </div>
+    <footer class="py-4 text-center border-top">
+        <p class="text-muted small mb-0">&copy; 2025 Balaghat Minerals. Reliable Partners in Manganese Supply.</p>
     </footer>
 
+    <script>
+        function toggleChat() {
+            const chat = document.getElementById('ai-chat-window');
+            chat.style.display = (chat.style.display === 'none' || chat.style.display === '') ? 'flex' : 'none';
+        }
+
+        const kb = {
+            "price": "Bulk prices ke liye please niche diye gaye form mein MT (Metric Tons) mention karein, hamari team aapko quote bhej degi.",
+            "oxide": "Hum 38% se 48% grade tak ka Manganese Oxide manufacture karte hain jo fertilizers aur welding ke liye best hai.",
+            "location": "Humara manufacturing unit Balaghat, Madhya Pradesh mein sthit hai.",
+            "ore": "Hum high-grade Manganese Ore Lumps aur Fines direct supply karte hain steel plants ke liye.",
+            "export": "Ji haan, hum Vietnam, Bangladesh aur Indonesia mein regular export karte hain.",
+            "capacity": "Hum monthly 500 MT se zyada ki capacity rakhte hain."
+        };
+
+        function aiResponse() {
+            const input = document.getElementById('user-msg');
+            const body = document.getElementById('chat-body');
+            const val = input.value.toLowerCase();
+            if(!val) return;
+
+            body.innerHTML += `<div class="text-end mb-2"><span style="background:#2980B9; color:white; padding:8px 12px; border-radius:12px; display:inline-block;">${input.value}</span></div>`;
+            
+            let reply = "Maaf kijiye, humein is baare mein zyada jaankari nahi hai. Aap +91XXXXXXXXXX par call kar sakte hain.";
+            for(let key in kb) { if(val.includes(key)) { reply = kb[key]; break; } }
+
+            setTimeout(() => {
+                body.innerHTML += `<div class="mb-2"><span style="background:#ddd; padding:8px 12px; border-radius:12px; display:inline-block;">${reply}</span></div>`;
+                body.scrollTop = body.scrollHeight;
+            }, 600);
+            input.value = "";
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
