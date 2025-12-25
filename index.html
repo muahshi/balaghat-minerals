@@ -26,9 +26,9 @@
         .nav-link { font-weight: 700; color: var(--charcoal) !important; margin-left: 20px; transition: 0.3s; }
         .nav-link:hover { color: var(--ind-blue) !important; }
 
-        /* Hero Section - UPDATED WITH YOUR REALISTIC MINE IMAGE */
+        /* Hero Section - Optimized for Visibility */
         .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), 
                         url('https://5.imimg.com/data5/SELLER/Default/2022/3/RW/NG/EY/102437829/whatsapp-image-2022-03-03-at-11-45-21-am-1000x1000.jpeg');
             background-size: cover; 
             background-position: center; 
@@ -38,6 +38,17 @@
             align-items: center; 
             color: white; 
             text-align: center;
+        }
+
+        /* Hero Text Styling */
+        .hero-section h1 {
+            color: #ffffff !important;
+            text-shadow: 2px 4px 10px rgba(0,0,0,0.6); /* Clear visibility on dark bg */
+        }
+        .hero-section p {
+            color: #f8f9fa !important;
+            font-weight: 600;
+            text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
         }
 
         /* Buttons */
@@ -62,7 +73,7 @@
         .infra-box { background: var(--light-bg); border-radius: 8px; padding: 25px; margin-bottom: 20px; transition: 0.3s; border-left: 6px solid var(--ind-blue); }
         .infra-box:hover { background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
 
-        /* AI Chatbot */
+        /* AI Chatbot Window */
         #ai-chat-window {
             display: none; position: fixed; bottom: 100px; right: 30px; width: 330px; height: 480px; 
             background: white; border-radius: 15px; box-shadow: 0 15px 40px rgba(0,0,0,0.3); 
@@ -116,8 +127,8 @@
 
     <header class="hero-section">
         <div class="container">
-            <h1 class="display-2 fw-bold mb-3">BALAGHAT MINERALS</h1>
-            <p class="fs-4 mb-5 text-light text-uppercase">Direct Manufacturer & Bulk Supplier of Manganese Products</p>
+            <h1 class="display-1 fw-bolder mb-3">BALAGHAT MINERALS</h1>
+            <p class="fs-4 mb-5 text-uppercase">Direct Manufacturer & Bulk Supplier of Manganese Products</p>
             <div class="d-flex justify-content-center gap-3">
                 <a href="#contact" class="btn-main">GET FREE QUOTE</a>
                 <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-outline-light px-5 py-3 fw-bold">WHATSAPP US</a>
