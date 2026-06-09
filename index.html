@@ -3,227 +3,556 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Balaghat Minerals | Top Manganese Manufacturer & Bulk Exporter India</title>
+    <title>Balaghat Minerals | Manganese Ore Manufacturer & Global Exporter, India</title>
     <meta name="description" content="Balaghat Minerals is a leading manufacturer and bulk exporter of high-grade Manganese Ore, Mn Oxide, and Manganese Dioxide from Balaghat, MP. Direct factory prices.">
     <meta name="keywords" content="Balaghat Minerals, Manganese Ore Manufacturer, Mn Oxide Supplier, Manganese Dioxide Exporter, Bulk Minerals India, Balaghat Manganese Factory">
     <meta name="author" content="Balaghat Minerals">
     <link rel="canonical" href="https://www.balaghatminerals.com/">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
         :root {
-            --charcoal: #121212;
-            --ind-blue: #2980B9;
-            --whatsapp-green: #25D366;
-            --light-bg: #f8fafb;
+            --ore: #1C1F26;
+            --steel: #2A2F3A;
+            --amber: #D4860A;
+            --amber-light: #F0A832;
+            --slate: #8A94A6;
+            --offwhite: #F5F4F0;
+            --white: #FFFFFF;
+            --border: rgba(255,255,255,0.08);
         }
 
-        body { font-family: 'Open Sans', sans-serif; color: #333; overflow-x: hidden; scroll-behavior: smooth; }
-        h1, h2, h3 { font-family: 'Inter', sans-serif; text-transform: uppercase; color: #1a252f; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; color: var(--ore); background: var(--white); overflow-x: hidden; }
 
-        /* Navbar */
-        .navbar { background: white; border-bottom: 4px solid var(--ind-blue); padding: 12px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        .navbar-brand { font-weight: 800; font-size: 1.5rem; color: #1a252f !important; }
-        .nav-link { font-weight: 700; color: #1a252f !important; margin-left: 20px; }
+        /* ─── TYPOGRAPHY ─── */
+        h1, h2, h3, h4 { font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.02em; }
 
-        /* Perfected Hero Section */
-        .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                        url('https://5.imimg.com/data5/SELLER/Default/2022/3/RW/NG/EY/102437829/whatsapp-image-2022-03-03-at-11-45-21-am-1000x1000.jpeg');
-            background-size: cover; background-position: center; background-attachment: fixed;
-            height: 95vh; min-height: 600px; display: flex; align-items: center; color: white; text-align: center;
+        /* ─── NAVBAR ─── */
+        .navbar {
+            position: sticky; top: 0; z-index: 1000;
+            background: var(--ore);
+            border-bottom: 2px solid var(--amber);
+            padding: 0 40px;
+            display: flex; align-items: center; justify-content: space-between;
+            height: 68px;
         }
-        .hero-content { max-width: 900px; margin: auto; padding: 20px; }
-        .hero-section h1 { 
-            color: #ffffff !important; text-shadow: 2px 4px 15px rgba(0,0,0,0.8); 
-            font-size: clamp(2.5rem, 8vw, 4.8rem); font-weight: 800; line-height: 1.1;
+        .nav-brand {
+            display: flex; align-items: center; gap: 12px;
+            text-decoration: none;
         }
-        .hero-section p { font-size: 1.25rem; font-weight: 600; text-shadow: 1px 2px 5px rgba(0,0,0,0.5); color: #f8f9fa !important; }
+        .nav-logo-mark {
+            width: 38px; height: 38px; background: var(--amber);
+            display: flex; align-items: center; justify-content: center;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 800; font-size: 1.1rem; color: var(--ore);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        }
+        .nav-brand-text { color: var(--white); font-family: 'Barlow Condensed', sans-serif; font-size: 1.25rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+        .nav-links { display: flex; gap: 36px; list-style: none; }
+        .nav-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--amber-light); }
+        .nav-cta { background: var(--amber); color: var(--ore); padding: 9px 22px; border-radius: 3px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; transition: background 0.2s; }
+        .nav-cta:hover { background: var(--amber-light); }
+        .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+        .hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: 0.3s; }
+        .mobile-menu { display: none; }
 
-        /* Section Spacing */
-        .section-padding { padding: 100px 0; }
-
-        /* Adjusted Product Cards & Badge */
-        .product-card { 
-            border: none; background: white; transition: 0.4s; height: 100%; 
-            border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
+        /* ─── HERO ─── */
+        .hero {
             position: relative;
+            min-height: 92vh;
+            background: var(--ore);
+            display: flex; align-items: center; justify-content: center;
+            overflow: hidden;
         }
-        .product-card:hover { transform: translateY(-10px); }
-        
-        .product-img-wrapper { position: relative; height: 280px; width: 100%; overflow: hidden; }
-        .product-img { height: 100%; width: 100%; object-fit: cover; }
-        
-        .factory-badge {
-            position: absolute; top: 15px; right: 15px; background: rgba(41, 128, 185, 0.9);
-            color: white; font-size: 10px; font-weight: 800; padding: 5px 12px;
-            border-radius: 50px; text-transform: uppercase; letter-spacing: 1px; z-index: 10;
+        /* Safari-safe: no background-attachment:fixed */
+        .hero-bg {
+            position: absolute; inset: 0;
+            background-image: url('https://5.imimg.com/data5/SELLER/Default/2022/3/RW/NG/EY/102437829/whatsapp-image-2022-03-03-at-11-45-21-am-1000x1000.jpeg');
+            background-size: cover; background-position: center;
+            opacity: 0.18;
+            /* transform trick for parallax-like depth without fixed attachment */
+            transform: scale(1.05);
+        }
+        .hero-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(160deg, rgba(28,31,38,0.85) 40%, rgba(212,134,10,0.15) 100%);
+        }
+        .hero-content {
+            position: relative; z-index: 2;
+            max-width: 880px; padding: 40px 24px;
+            text-align: center;
+        }
+        .hero-eyebrow {
+            display: inline-flex; align-items: center; gap: 10px;
+            color: var(--amber); font-size: 0.75rem; font-weight: 600;
+            letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 28px;
+        }
+        .hero-eyebrow::before, .hero-eyebrow::after { content: ''; display: block; width: 36px; height: 1px; background: var(--amber); }
+        .hero h1 {
+            color: var(--white);
+            font-size: clamp(3rem, 9vw, 5.5rem);
+            font-weight: 800; line-height: 1.0; text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .hero h1 span { color: var(--amber); }
+        .hero-sub {
+            color: rgba(255,255,255,0.65); font-size: clamp(1rem, 2.5vw, 1.2rem);
+            font-weight: 400; margin-bottom: 48px; letter-spacing: 0.04em;
+        }
+        .hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+        .btn-primary-hero {
+            background: var(--amber); color: var(--ore); padding: 16px 44px;
+            font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.05rem;
+            letter-spacing: 0.08em; text-transform: uppercase; border: none;
+            border-radius: 3px; text-decoration: none; cursor: pointer; transition: 0.25s;
+        }
+        .btn-primary-hero:hover { background: var(--amber-light); transform: translateY(-2px); }
+        .btn-outline-hero {
+            border: 1.5px solid rgba(255,255,255,0.4); color: var(--white);
+            background: transparent; padding: 16px 44px;
+            font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.05rem;
+            letter-spacing: 0.08em; text-transform: uppercase;
+            border-radius: 3px; text-decoration: none; cursor: pointer; transition: 0.25s;
+        }
+        .btn-outline-hero:hover { border-color: var(--amber); color: var(--amber); }
+
+        /* Hero stats bar */
+        .hero-stats {
+            position: absolute; bottom: 0; left: 0; right: 0; z-index: 2;
+            background: rgba(212,134,10,0.12); backdrop-filter: blur(8px);
+            border-top: 1px solid rgba(212,134,10,0.3);
+            display: flex; justify-content: center; flex-wrap: wrap;
+        }
+        .hero-stat {
+            padding: 20px 52px; text-align: center;
+            border-right: 1px solid rgba(255,255,255,0.08);
+        }
+        .hero-stat:last-child { border-right: none; }
+        .hero-stat-num { color: var(--amber); font-family: 'Barlow Condensed', sans-serif; font-size: 2rem; font-weight: 800; line-height: 1; }
+        .hero-stat-label { color: rgba(255,255,255,0.5); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; margin-top: 4px; }
+
+        /* ─── SECTION BASE ─── */
+        section { padding: 100px 0; }
+        .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+        .section-label { color: var(--amber); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 12px; display: block; }
+        .section-title { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; text-transform: uppercase; color: var(--ore); line-height: 1.05; margin-bottom: 20px; }
+        .section-title.light { color: var(--white); }
+
+        /* ─── ABOUT ─── */
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+        .about-img-wrap { position: relative; }
+        .about-img {
+            width: 100%; border-radius: 4px; display: block;
+            aspect-ratio: 4/3; object-fit: cover;
+            filter: grayscale(20%) contrast(1.05);
+        }
+        .about-img-badge {
+            position: absolute; bottom: -20px; right: -20px;
+            background: var(--amber); color: var(--ore);
+            padding: 18px 24px; border-radius: 4px;
+            font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.2rem;
+            text-transform: uppercase; line-height: 1.2; text-align: center;
+        }
+        .about-body p { color: #4A5568; line-height: 1.8; margin-bottom: 20px; font-size: 1rem; }
+        .about-pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 36px; }
+        .pillar { border-top: 2px solid var(--amber); padding-top: 16px; }
+        .pillar-icon { color: var(--amber); font-size: 1.5rem; margin-bottom: 8px; }
+        .pillar-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1rem; text-transform: uppercase; color: var(--ore); letter-spacing: 0.04em; }
+        .pillar-desc { font-size: 0.8rem; color: var(--slate); margin-top: 4px; }
+
+        /* ─── PRODUCTS ─── */
+        #products { background: var(--offwhite); }
+        .products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 56px; }
+        .product-card {
+            background: var(--white); border-radius: 4px; overflow: hidden;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.07); transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px rgba(0,0,0,0.12); }
+        .product-img-wrap { position: relative; height: 240px; overflow: hidden; }
+        .product-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+        .product-card:hover .product-img { transform: scale(1.06); }
+        .product-grade {
+            position: absolute; top: 14px; left: 14px;
+            background: var(--ore); color: var(--amber);
+            font-family: 'Barlow Condensed', sans-serif; font-size: 0.7rem; font-weight: 700;
+            letter-spacing: 0.14em; text-transform: uppercase; padding: 5px 12px; border-radius: 2px;
+        }
+        .product-body { padding: 24px 28px 28px; }
+        .product-name { font-family: 'Barlow Condensed', sans-serif; font-size: 1.4rem; font-weight: 800; text-transform: uppercase; color: var(--ore); margin-bottom: 8px; }
+        .product-desc { color: var(--slate); font-size: 0.88rem; line-height: 1.7; margin-bottom: 16px; }
+        .product-specs { list-style: none; }
+        .product-specs li { font-size: 0.8rem; color: #4A5568; padding: 5px 0; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; }
+        .product-specs li:last-child { border: none; }
+        .product-specs li span { font-weight: 600; color: var(--ore); }
+
+        /* ─── WHY US ─── */
+        #why { background: var(--ore); }
+        .why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; margin-top: 56px; }
+        .why-card {
+            background: var(--steel); padding: 40px 28px;
+            border-bottom: 3px solid transparent;
+            transition: border-color 0.3s, background 0.3s;
+        }
+        .why-card:hover { border-color: var(--amber); background: #30364A; }
+        .why-num { font-family: 'Barlow Condensed', sans-serif; font-size: 3rem; font-weight: 800; color: rgba(212,134,10,0.2); line-height: 1; margin-bottom: 16px; }
+        .why-title { font-family: 'Barlow Condensed', sans-serif; font-size: 1.15rem; font-weight: 700; text-transform: uppercase; color: var(--white); letter-spacing: 0.04em; margin-bottom: 10px; }
+        .why-desc { color: rgba(255,255,255,0.45); font-size: 0.84rem; line-height: 1.7; }
+
+        /* ─── CONTACT ─── */
+        #contact { background: var(--white); }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; margin-top: 56px; align-items: start; }
+        .contact-info-item { display: flex; align-items: flex-start; gap: 18px; margin-bottom: 32px; }
+        .contact-icon-box {
+            width: 44px; height: 44px; flex-shrink: 0;
+            background: var(--ore); color: var(--amber);
+            border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 1rem;
+        }
+        .contact-info-label { font-size: 0.68rem; color: var(--slate); font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 4px; }
+        .contact-info-value { color: var(--ore); font-weight: 500; font-size: 0.95rem; }
+        .form-box { background: var(--offwhite); padding: 40px; border-radius: 4px; }
+        .form-box h4 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.5rem; font-weight: 800; text-transform: uppercase; color: var(--ore); margin-bottom: 28px; letter-spacing: 0.04em; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .form-group { margin-bottom: 16px; }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%; padding: 12px 16px;
+            background: var(--white); border: 1.5px solid #DDE2E8;
+            border-radius: 3px; font-family: 'Inter', sans-serif; font-size: 0.88rem; color: var(--ore);
+            outline: none; transition: border-color 0.2s;
+        }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--amber); }
+        .form-group textarea { resize: vertical; min-height: 110px; }
+        .btn-submit {
+            width: 100%; background: var(--ore); color: var(--white);
+            padding: 15px; border: none; border-radius: 3px; cursor: pointer;
+            font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.1rem;
+            letter-spacing: 0.1em; text-transform: uppercase; transition: 0.25s;
+        }
+        .btn-submit:hover { background: var(--amber); color: var(--ore); }
+
+        /* ─── FOOTER ─── */
+        footer {
+            background: var(--ore); border-top: 1px solid rgba(255,255,255,0.06);
+            padding: 24px 40px; display: flex; align-items: center;
+            justify-content: space-between; flex-wrap: wrap; gap: 12px;
+        }
+        .footer-copy { color: rgba(255,255,255,0.35); font-size: 0.78rem; }
+        .footer-right { display: flex; gap: 24px; }
+        .footer-right a { color: rgba(255,255,255,0.35); font-size: 0.78rem; text-decoration: none; transition: color 0.2s; }
+        .footer-right a:hover { color: var(--amber); }
+
+        /* ─── WHATSAPP ─── */
+        .wa-float {
+            position: fixed; bottom: 28px; right: 28px;
+            background: #25D366; color: var(--white);
+            width: 56px; height: 56px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.6rem; z-index: 999; box-shadow: 0 6px 20px rgba(37,211,102,0.4);
+            text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .wa-float:hover { transform: scale(1.1); box-shadow: 0 10px 28px rgba(37,211,102,0.5); }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 960px) {
+            .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+            .products-grid { grid-template-columns: 1fr 1fr; }
+            .why-grid { grid-template-columns: 1fr 1fr; }
+            .nav-links, .nav-cta { display: none; }
+            .hamburger { display: flex; }
+        }
+        @media (max-width: 640px) {
+            .products-grid { grid-template-columns: 1fr; }
+            .why-grid { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+            .hero-stats { display: none; }
+            .about-img-badge { right: 0; bottom: -16px; }
+            .about-pillars { grid-template-columns: 1fr; }
+            section { padding: 72px 0; }
+            footer { flex-direction: column; text-align: center; }
         }
 
-        /* Contact Details Visibility Fix */
-        .bg-charcoal { background-color: var(--charcoal) !important; }
-        .contact-info-text { color: #ffffff !important; font-size: 1.15rem; font-weight: 600; }
-        .contact-icon { 
-            width: 45px; height: 45px; background: var(--ind-blue); 
-            color: white !important; border-radius: 50%; display: flex; 
-            align-items: center; justify-content: center; margin-right: 15px; font-size: 20px;
+        /* Mobile nav open state */
+        .mobile-menu.open {
+            display: flex; flex-direction: column; gap: 0;
+            background: var(--ore); border-top: 1px solid var(--border);
         }
-
-        /* Responsive Buttons */
-        .btn-main { background: var(--ind-blue); color: white; padding: 16px 40px; font-weight: 800; border-radius: 6px; border: none; transition: 0.3s; text-decoration: none; display: inline-block; }
-        .btn-main:hover { background: #1f6391; color: white; transform: scale(1.05); }
-
-        .whatsapp-float {
-            position: fixed; bottom: 30px; right: 30px; background: var(--whatsapp-green); color: white;
-            width: 60px; height: 60px; border-radius: 50%; text-align: center; font-size: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3); z-index: 1000; display: flex; align-items: center; justify-content: center; text-decoration: none;
+        .mobile-menu a {
+            padding: 16px 40px; color: rgba(255,255,255,0.8); text-decoration: none;
+            font-weight: 600; font-size: 0.88rem; letter-spacing: 0.1em; text-transform: uppercase;
+            border-bottom: 1px solid var(--border); transition: color 0.2s;
         }
+        .mobile-menu a:hover { color: var(--amber); }
     </style>
 </head>
 <body>
 
-    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<!-- WhatsApp Float -->
+<a href="https://wa.me/91XXXXXXXXXX" class="wa-float" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
 
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">BALAGHAT MINERALS</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+<!-- Navbar -->
+<nav class="navbar">
+    <a class="nav-brand" href="#">
+        <div class="nav-logo-mark">BM</div>
+        <span class="nav-brand-text">Balaghat Minerals</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Get Quote</a>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#products" onclick="closeMenu()">Products</a>
+    <a href="#why" onclick="closeMenu()">Why Us</a>
+    <a href="#contact" onclick="closeMenu()">Get a Quote</a>
+</div>
+
+<!-- Hero -->
+<header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-eyebrow">Balaghat, Madhya Pradesh, India</div>
+        <h1>THE SOURCE OF<br><span>HIGH-GRADE</span><br>MANGANESE</h1>
+        <p class="hero-sub">Direct manufacturer &amp; global bulk exporter of Mn Ore, Mn Oxide &amp; MnO₂</p>
+        <div class="hero-actions">
+            <a href="#contact" class="btn-primary-hero">Request Bulk Quote</a>
+            <a href="https://wa.me/91XXXXXXXXXX" class="btn-outline-hero">WhatsApp Us</a>
         </div>
-    </nav>
-
-    <header class="hero-section">
-        <div class="container hero-content">
-            <h1 class="mb-3">BALAGHAT MINERALS</h1>
-            <p class="fs-4 mb-5 text-uppercase">Direct Manufacturer & Global Bulk Exporter of Manganese</p>
-            <div class="d-flex justify-content-center flex-wrap gap-3">
-                <a href="#contact" class="btn-main">GET FREE QUOTE</a>
-                <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-outline-light px-5 py-3 fw-bold">WHATSAPP US</a>
-            </div>
+    </div>
+    <div class="hero-stats">
+        <div class="hero-stat">
+            <div class="hero-stat-num">500+</div>
+            <div class="hero-stat-label">MT Monthly Capacity</div>
         </div>
-    </header>
-
-    <section id="about" class="section-padding">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 position-relative">
-                    <span class="factory-badge" style="top:20px; left:20px; right:auto; background:#1a252f;">Established 2025</span>
-                    <img src="https://5.imimg.com/data5/SELLER/Default/2022/3/UO/YO/BI/102437829/whatsapp-image-2022-03-03-at-2-52-28-pm-1000x1000.jpeg" alt="Manufacturing Plant Balaghat" class="img-fluid rounded-3 shadow-lg">
-                </div>
-                <div class="col-lg-6 ps-lg-5 mt-4 mt-lg-0">
-                    <h2 class="mb-4">Real Manufacturers from Balaghat, MP</h2>
-                    <p class="lead text-primary fw-bold">Traders se bachein, seedha factory se judein.</p>
-                    <p>Manganese ke garh Balaghat mein hamari apni manufacturing unit hai. Hum high-grade Manganese Ore ko process karke Oxide aur Dioxide banate hain jo pure India aur overseas dispatch hota hai.</p>
-                    <div class="d-flex gap-4 mt-4">
-                        <div><i class="fas fa-industry fa-2x text-primary mb-2"></i><br><b>Own Plant</b></div>
-                        <div><i class="fas fa-vial fa-2x text-primary mb-2"></i><br><b>Lab Tested</b></div>
-                        <div><i class="fas fa-globe-americas fa-2x text-primary mb-2"></i><br><b>Global Export</b></div>
-                    </div>
-                </div>
-            </div>
+        <div class="hero-stat">
+            <div class="hero-stat-num">15+</div>
+            <div class="hero-stat-label">Export Destinations</div>
         </div>
-    </section>
-
-    <section id="products" class="section-padding bg-light">
-        <div class="container text-center">
-            <h2 class="mb-5">Our Core Products</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="product-card">
-                        <div class="product-img-wrapper">
-                            <span class="factory-badge">Real Product Image</span>
-                            <img src="https://5.imimg.com/data5/SELLER/Default/2022/3/LF/IU/GH/102437829/high-grade-manganese-ore-500x500.jpg" class="product-img" alt="High Grade Manganese Ore">
-                        </div>
-                        <div class="p-4 text-start">
-                            <h4 class="h5 fw-bold">Manganese Ore</h4>
-                            <p class="small text-muted mb-0">High-grade lumps & fines direct from mines.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="product-card">
-                        <div class="product-img-wrapper">
-                            <span class="factory-badge">Real Product Image</span>
-                            <img src="https://5.imimg.com/data5/SELLER/Default/2022/3/HF/FO/PZ/102437829/haa2fae25c1c64e8296c185ebe23e1edag-1--500x500.jpg" class="product-img" alt="Manganese Oxide">
-                        </div>
-                        <div class="p-4 text-start">
-                            <h4 class="h5 fw-bold">Manganese Oxide</h4>
-                            <p class="small text-muted mb-0">Processed Mn Oxide for industrial & feed use.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="product-card">
-                        <div class="product-img-wrapper">
-                            <span class="factory-badge">Real Product Image</span>
-                            <img src="https://5.imimg.com/data5/SELLER/Default/2022/3/BW/JB/ZC/102437829/manganese-dioxide-granular-500x500.jpg" class="product-img" alt="Manganese Dioxide MnO2">
-                        </div>
-                        <div class="p-4 text-start">
-                            <h4 class="h5 fw-bold">Manganese Dioxide</h4>
-                            <p class="small text-muted mb-0">Pure MnO2 granular for specialized chemicals.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="hero-stat">
+            <div class="hero-stat-num">3</div>
+            <div class="hero-stat-label">Core Products</div>
         </div>
-    </section>
+        <div class="hero-stat">
+            <div class="hero-stat-num">Direct</div>
+            <div class="hero-stat-label">Factory Pricing</div>
+        </div>
+    </div>
+</header>
 
-    <section id="contact" class="section-padding bg-charcoal text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 mb-5 mb-lg-0">
-                    <h2 class="text-white mb-4">Contact Our Team</h2>
-                    <p class="mb-5" style="color:#bdc3c7;">Hamari team bulk enquiries aur global export ke liye 24/7 available hai.</p>
-                    
-                    <div class="contact-info-text">
-                        <p class="d-flex align-items-center mb-4">
-                            <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span> 
-                            Balaghat, Madhya Pradesh, India - 481001
-                        </p>
-                        <p class="d-flex align-items-center mb-4">
-                            <span class="contact-icon"><i class="fas fa-envelope"></i></span> 
-                            sales@balaghatminerals.com
-                        </p>
-                        <p class="d-flex align-items-center mb-4">
-                            <span class="contact-icon"><i class="fas fa-phone-alt"></i></span> 
-                            +91 91XXXXXXXXXX
-                        </p>
+<!-- About -->
+<section id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-img-wrap">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2022/3/UO/YO/BI/102437829/whatsapp-image-2022-03-03-at-2-52-28-pm-1000x1000.jpeg" alt="Balaghat Minerals Processing Plant" class="about-img">
+                <div class="about-img-badge">Own<br>Plant<br>Balaghat</div>
+            </div>
+            <div class="about-body">
+                <span class="section-label">Who We Are</span>
+                <h2 class="section-title">Real Manufacturers.<br>No Middlemen.</h2>
+                <p>Balaghat Minerals operates a fully owned processing unit in Balaghat, Madhya Pradesh — India's premier manganese belt. We extract, process, and ship directly from our facility, ensuring consistent quality and competitive factory pricing on every order.</p>
+                <p>Our products are lab-tested to international standards before dispatch, serving steel plants, chemical manufacturers, battery producers, and trading houses across India and overseas.</p>
+                <div class="about-pillars">
+                    <div class="pillar">
+                        <div class="pillar-icon"><i class="fas fa-industry"></i></div>
+                        <div class="pillar-title">Own Plant</div>
+                        <div class="pillar-desc">Vertical integration from mine to dispatch</div>
                     </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="bg-white p-4 p-md-5 rounded-3 text-dark shadow-lg">
-                        <h4 class="mb-4 fw-bold text-center">BULK ENQUIRY FORM</h4>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6"><input type="text" class="form-control bg-light" placeholder="Your Name" required></div>
-                                <div class="col-md-6"><input type="text" class="form-control bg-light" placeholder="Company Name" required></div>
-                                <div class="col-12"><input type="email" class="form-control bg-light" placeholder="Email Address" required></div>
-                                <div class="col-12"><textarea class="form-control bg-light" rows="4" placeholder="Monthly Requirement (e.g., 500 MT)..." required></textarea></div>
-                                <div class="col-12"><button type="submit" class="btn-main w-100">SUBMIT ENQUIRY</button></div>
-                            </div>
-                        </form>
+                    <div class="pillar">
+                        <div class="pillar-icon"><i class="fas fa-vial"></i></div>
+                        <div class="pillar-title">Lab Tested</div>
+                        <div class="pillar-desc">COA provided with every shipment</div>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-icon"><i class="fas fa-ship"></i></div>
+                        <div class="pillar-title">Global Export</div>
+                        <div class="pillar-desc">FCL &amp; LCL shipping worldwide</div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="py-4 text-center border-top">
-        <p class="text-muted small mb-0">&copy; 2025 Balaghat Minerals. Reliable Partners in Manganese Supply.</p>
-    </footer>
+<!-- Products -->
+<section id="products">
+    <div class="container">
+        <span class="section-label">Our Inventory</span>
+        <h2 class="section-title">Core Products</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2022/3/LF/IU/GH/102437829/high-grade-manganese-ore-500x500.jpg" class="product-img" alt="High Grade Manganese Ore">
+                    <span class="product-grade">High Grade</span>
+                </div>
+                <div class="product-body">
+                    <div class="product-name">Manganese Ore</div>
+                    <p class="product-desc">High-grade lumps &amp; fines sourced directly from Balaghat mines. Consistent Mn% per lot.</p>
+                    <ul class="product-specs">
+                        <li>Mn Content <span>30–44%</span></li>
+                        <li>Form <span>Lumps / Fines</span></li>
+                        <li>Packaging <span>Bulk / Bags</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2022/3/HF/FO/PZ/102437829/haa2fae25c1c64e8296c185ebe23e1edag-1--500x500.jpg" class="product-img" alt="Manganese Oxide">
+                    <span class="product-grade">Industrial Grade</span>
+                </div>
+                <div class="product-body">
+                    <div class="product-name">Manganese Oxide</div>
+                    <p class="product-desc">Processed Mn Oxide for industrial applications including animal feed, fertilizers, and ceramics.</p>
+                    <ul class="product-specs">
+                        <li>MnO Content <span>60–75%</span></li>
+                        <li>Form <span>Powder / Granules</span></li>
+                        <li>Packaging <span>25kg / 50kg Bags</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2022/3/BW/JB/ZC/102437829/manganese-dioxide-granular-500x500.jpg" class="product-img" alt="Manganese Dioxide MnO2">
+                    <span class="product-grade">Pure Grade</span>
+                </div>
+                <div class="product-body">
+                    <div class="product-name">Manganese Dioxide</div>
+                    <p class="product-desc">Pure MnO₂ granular for specialized chemical, battery, and water treatment applications.</p>
+                    <ul class="product-specs">
+                        <li>MnO₂ Content <span>70–85%</span></li>
+                        <li>Form <span>Granular</span></li>
+                        <li>Packaging <span>25kg / 50kg Bags</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Why Us -->
+<section id="why">
+    <div class="container">
+        <span class="section-label" style="color:var(--amber);">Our Edge</span>
+        <h2 class="section-title light">Why Buyers Choose<br>Balaghat Minerals</h2>
+        <div class="why-grid">
+            <div class="why-card">
+                <div class="why-num">01</div>
+                <div class="why-title">Factory-Direct Pricing</div>
+                <div class="why-desc">No broker margins. You buy directly from the manufacturer, saving 8–15% vs. trader pricing.</div>
+            </div>
+            <div class="why-card">
+                <div class="why-num">02</div>
+                <div class="why-title">Consistent Quality</div>
+                <div class="why-desc">Every lot is lab-tested with Certificate of Analysis issued before dispatch. No surprises.</div>
+            </div>
+            <div class="why-card">
+                <div class="why-num">03</div>
+                <div class="why-title">Bulk Capacity</div>
+                <div class="why-desc">500+ MT monthly capacity. We can scale with your requirements — trial orders and long-term contracts both welcome.</div>
+            </div>
+            <div class="why-card">
+                <div class="why-num">04</div>
+                <div class="why-title">Global Logistics</div>
+                <div class="why-desc">FCL &amp; LCL shipments handled. Export documentation, customs, and freight coordination on request.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <div class="container">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Request a Bulk Quote</h2>
+        <div class="contact-grid">
+            <div>
+                <div class="contact-info-item">
+                    <div class="contact-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <div class="contact-info-label">Location</div>
+                        <div class="contact-info-value">Balaghat, Madhya Pradesh, India – 481001</div>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <div class="contact-info-label">Email</div>
+                        <div class="contact-info-value">sales@balaghatminerals.com</div>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-icon-box"><i class="fas fa-phone-alt"></i></div>
+                    <div>
+                        <div class="contact-info-label">Phone / WhatsApp</div>
+                        <div class="contact-info-value">+91 91XXXXXXXXXX</div>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-icon-box"><i class="fas fa-clock"></i></div>
+                    <div>
+                        <div class="contact-info-label">Response Time</div>
+                        <div class="contact-info-value">Bulk enquiries replied within 4 business hours</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-box">
+                <h4>Send Bulk Enquiry</h4>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group"><input type="text" placeholder="Your Name" required></div>
+                        <div class="form-group"><input type="text" placeholder="Company Name" required></div>
+                    </div>
+                    <div class="form-group"><input type="email" placeholder="Email Address" required></div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="" disabled selected>Product Required</option>
+                            <option>Manganese Ore</option>
+                            <option>Manganese Oxide</option>
+                            <option>Manganese Dioxide (MnO₂)</option>
+                            <option>Multiple Products</option>
+                        </select>
+                    </div>
+                    <div class="form-group"><textarea placeholder="Monthly requirement, grade needed, destination port... (e.g. 200 MT MnO₂ 75%, CIF Rotterdam)" required></textarea></div>
+                    <button type="submit" class="btn-submit">Submit Enquiry →</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-copy">&copy; 2025 Balaghat Minerals. Reliable Partners in Manganese Supply.</div>
+    <div class="footer-right">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('open');
+    }
+    function closeMenu() {
+        document.getElementById('mobileMenu').classList.remove('open');
+    }
+</script>
+
 </body>
 </html>
