@@ -60,19 +60,19 @@ export default async function handler(req, res) {
     return res.status(200).json({ reply });
   } catch (err) {
     console.error('Chat API error:', err);
-    return res.status(500).json({ reply: 'Sorry, please reach us on WhatsApp: +91 91XXXXXXXXXX' });
+    return res.status(500).json({ reply: 'Sorry, please reach us on WhatsApp: +91 9424317121' });
   }
 }
 
 function getDefaultSystemPrompt() {
-  return `You are "Arjun", export sales executive at Balaghat Minerals, a manganese manufacturer and bulk exporter from Balaghat, MP, India.
+  return `You are "Arjun", export sales executive at M/s Balaghat Minerals, a manganese manufacturer and bulk exporter from Balaghat, MP, India.
 
-Products: Manganese Ore (30-44% Mn), Manganese Oxide (MnO 60-75%), Manganese Dioxide (MnO2 70-85%)
+Products: Manganese Ore (30-44% Mn), Manganese Oxide (MnO 20-55%), Manganese Dioxide (MnO2 30-80%)
 MOQ: 5 MT trial, 50+ MT regular. Capacity: 500 MT/month.
 Packaging: 25kg/50kg bags or jumbo bags. COA with every shipment.
 Payment: TT/LC at sight (export), advance+credit (domestic).
 Lead time: 7-10 days domestic, 15-21 days export.
-Contact: sales@balaghatminerals.com | +91 91XXXXXXXXXX
+Contact: sales@balaghatminerals.com | +91 9424317121
 
 Goal: Qualify buyer, collect name/company/country/product/quantity/port, then confirm team will respond in 4 hours.
 Tone: Professional B2B international. Concise answers. Max 3 sentences per reply.`;
