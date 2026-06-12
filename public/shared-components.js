@@ -2,7 +2,7 @@
 
 /* ─── NAVBAR HTML ─── */
 const NAVBAR_HTML = `
-<a href="https://wa.me/91XXXXXXXXXX" class="wa-float" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<a href="https://wa.me/919424317121" class="wa-float" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
 <div id="chat-launcher" onclick="toggleChat()" title="Ask about bulk orders">
   <i class="fas fa-comments"></i>
@@ -13,7 +13,7 @@ const NAVBAR_HTML = `
   <div class="chat-header">
     <div class="chat-avatar">BM</div>
     <div class="chat-header-info">
-      <div class="chat-header-name">Balaghat Minerals Export Desk</div>
+      <div class="chat-header-name">M/s Balaghat Minerals Export Desk</div>
       <div class="chat-header-status">Online — Bulk Enquiries</div>
     </div>
     <button class="chat-close" onclick="toggleChat()"><i class="fas fa-times"></i></button>
@@ -35,7 +35,7 @@ const NAVBAR_HTML = `
 <nav class="navbar">
   <a class="nav-brand" href="/index.html">
     <div class="nav-logo-mark">BM</div>
-    <span class="nav-brand-text">Balaghat Minerals</span>
+    <span class="nav-brand-text">M/s Balaghat Minerals</span>
   </a>
   <ul class="nav-links">
     <li><a href="/index.html">Home</a></li>
@@ -67,7 +67,7 @@ const FOOTER_HTML = `
       <div>
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
           <div class="nav-logo-mark" style="width:32px;height:32px;font-size:0.9rem;">BM</div>
-          <span style="color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;">Balaghat Minerals</span>
+          <span style="color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;">M/s Balaghat Minerals</span>
         </div>
         <p class="footer-brand-text">Direct manufacturer & global bulk exporter of Manganese Ore, Mn Oxide & MnO₂ from Balaghat, MP, India.</p>
         <p class="footer-brand-text" style="margin-top:10px;">GST: 23XXXXX | IEC: XXXXXXX</p>
@@ -90,11 +90,11 @@ const FOOTER_HTML = `
         <div class="footer-col-title">Contact</div>
         <p><i class="fas fa-map-marker-alt" style="color:var(--amber);margin-right:6px;"></i>Balaghat, MP, India – 481001</p>
         <p><i class="fas fa-envelope" style="color:var(--amber);margin-right:6px;"></i>sales@balaghatminerals.com</p>
-        <p><i class="fab fa-whatsapp" style="color:var(--amber);margin-right:6px;"></i>+91 91XXXXXXXXXX</p>
+        <p><i class="fab fa-whatsapp" style="color:var(--amber);margin-right:6px;"></i>Monish Ali — +91 9424317121</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <span class="footer-copy">© 2025 Balaghat Minerals. Reliable Partners in Manganese Supply.</span>
+      <span class="footer-copy">© 2025 M/s Balaghat Minerals. Reliable Partners in Manganese Supply.</span>
       <span class="footer-schema-note">Manufacturer · Exporter · Balaghat · Madhya Pradesh · India</span>
     </div>
   </div>
@@ -132,12 +132,12 @@ let chatOpen = false;
 let leadCollected = false;
 let leadData = {};
 
-const SYSTEM_PROMPT = `You are "Arjun", the export sales executive at Balaghat Minerals — a manganese ore manufacturer and bulk exporter based in Balaghat, Madhya Pradesh, India.
+const SYSTEM_PROMPT = `You are "Arjun", the export sales executive at M/s Balaghat Minerals — a manganese ore manufacturer and bulk exporter based in Balaghat, Madhya Pradesh, India.
 
 COMPANY FACTS:
-- Products: Manganese Ore (30-44% Mn, lumps/fines), Manganese Oxide (60-75% MnO), Manganese Dioxide/MnO2 (70-85% MnO2)
+- Products: Manganese Ore (30-44% Mn, lumps/fines), Manganese Oxide (20-55% MnO), Manganese Dioxide/MnO2 (30-80% MnO2)
 - Location: Balaghat, MP, India – 481001 (India's top manganese belt)
-- Email: sales@balaghatminerals.com | WhatsApp: +91 91XXXXXXXXXX
+- Email: sales@balaghatminerals.com | WhatsApp: +91 9424317121
 - Capacity: 500+ MT/month
 - Export: FCL and LCL worldwide, COA provided with every shipment
 - Pricing: Factory-direct (no broker margins), competitive ex-works and CIF pricing
@@ -156,7 +156,7 @@ If buyer shares contact info, acknowledge warmly and say: "Perfect — our expor
 
 function initChat() {
   const greetings = [
-    "Hello! I'm Arjun from Balaghat Minerals export desk. How can I help you today? 👋",
+    "Hello! I'm Arjun from M/s Balaghat Minerals export desk. How can I help you today? 👋",
     "Looking for bulk manganese? Ask me about pricing, grades, or export terms."
   ];
   setTimeout(() => {
@@ -245,6 +245,6 @@ async function sendMessage() {
     }
   } catch (e) {
     removeTyping();
-    addBotMessage("Connection issue. Please WhatsApp us directly: +91 91XXXXXXXXXX");
+    addBotMessage("Connection issue. Please WhatsApp us directly: +91 9424317121");
   }
 }
