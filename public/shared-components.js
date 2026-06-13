@@ -43,6 +43,7 @@ const NAVBAR_HTML = `
     <li><a href="/export.html">Export</a></li>
     <li><a href="/faq.html">FAQ</a></li>
     <li><a href="/about.html">About</a></li>
+    <li><a href="/resources/index.html">Resources</a></li>
   </ul>
   <a href="/export.html#enquiry" class="nav-cta">Get Quote</a>
   <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
