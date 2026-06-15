@@ -1,45 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.balaghatminerals.com/</loc>
+    <loc>https://balaghat-minerals.vercel.app/</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.balaghatminerals.com/export.html</loc>
+    <loc>https://balaghat-minerals.vercel.app/export.html</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://www.balaghatminerals.com/faq.html</loc>
+    <loc>https://balaghat-minerals.vercel.app/faq.html</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.balaghatminerals.com/about.html</loc>
+    <loc>https://balaghat-minerals.vercel.app/about.html</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.balaghatminerals.com/products/manganese-ore.html</loc>
+    <loc>https://balaghat-minerals.vercel.app/products/manganese-ore.html</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.balaghatminerals.com/products/manganese-oxide.html</loc>
+    <loc>https://balaghat-minerals.vercel.app/products/manganese-oxide.html</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.balaghatminerals.com/products/manganese-dioxide.html</loc>
+    <loc>https://balaghat-minerals.vercel.app/products/manganese-dioxide.html</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://balaghat-minerals.vercel.app/resources/index.html</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://balaghat-minerals.vercel.app/resources/manganese-ore-grades-mn-content-guide.html</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://balaghat-minerals.vercel.app/resources/manganese-oxide-vs-dioxide-differences-uses.html</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://balaghat-minerals.vercel.app/resources/manganese-export-documentation-checklist.html</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://balaghat-minerals.vercel.app/resources/manganese-ore-pricing-factors-explained.html</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
