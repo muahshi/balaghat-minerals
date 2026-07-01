@@ -44,6 +44,7 @@ const NAVBAR_HTML = `
     <li><a href="/faq.html">FAQ</a></li>
     <li><a href="/about.html">About</a></li>
     <li><a href="/resources/index.html">Resources</a></li>
+    <li><a href="/corporate-profile.html">Profile</a></li>
   </ul>
   <a href="/export.html#enquiry" class="nav-cta">Get Quote</a>
   <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
@@ -56,6 +57,7 @@ const NAVBAR_HTML = `
   <a href="/export.html" onclick="closeMobileMenu()">Export</a>
   <a href="/faq.html" onclick="closeMobileMenu()">FAQ</a>
   <a href="/about.html" onclick="closeMobileMenu()">About</a>
+  <a href="/corporate-profile.html" onclick="closeMobileMenu()">Company Profile</a>
   <a href="/export.html#enquiry" onclick="closeMobileMenu()">Get a Quote →</a>
 </div>
 `;
